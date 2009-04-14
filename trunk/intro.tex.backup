@@ -1,0 +1,15 @@
+\begin{abstract}
+
+O presente trabalho visa demonstrar a aplicação das camadas OSI no protocolo IRC (Internet Relay Chat) ou (tradução em português).
+
+\end{abstract}
+
+\newpage
+
+\section{Introdução}
+
+O OSI  ou Interconexão de Sistemas Abertos é um modelo usado para entender como os protocolos de rede funcionam. Para facilitar a interconexão de sistemas de computadores, a ISO (International Standards Organization) desenvolveu um modelo de referência chamado OSI (Open Systems Interconnection) para que os fabricantes pudessem criar protocolos a partir deste modelo. \cite{TORRESOSI}
+
+O modelo OSI é dividido em sete camadas. Cada camada é responsável por algum tipo de processamento e cada camada apenas se comunica com a camada imediatamente inferior ou superior. \cite{VENTURAOSI}
+
+O IRC é um protocolo que permite a comunicação  entre usuários. “O IRC fornece um modo de comunicação em tempo real com pessoas de todo o mundo. Consiste em várias redes separadas ("networks" ou "nets") , de Servidores de IRC, os quais permitem aos utilizadores ("users") ligarem-se ao IRC.”\cite{INTROIRC}

@@ -1,0 +1,144 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc} 	% reconhece a acentuação para o português
+\usepackage[brazil, english, portuguese, brazilian]{babel}
+\usepackage{hyperref}		% para que o arquivo eletronico tenha links
+\usepackage{aecompl} 		% aumentar qualidade das fontes
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+\usepackage{pstricks,pst-node}
+\usepackage[normal,tight,center]{subfigure}
+\setlength{\subfigcapskip}{-.5em}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx} 		% para poder utilizar imagens
+\usepackage{float} %Inserir fig flutuantes use opcao H ficara na posicao que voce inseriu
+\usepackage{wrapfig} %para colocar figuras do lado de Texto
+\usepackage{verbatim} %para colocar codigo LATEX sem que seja executado
+\usepackage{pgf} %Logo nos Slides
+
+\usetheme{Madrid} %Algus temas: Warsaw, Berkeley, Madrid
+%\usetheme{lankton-keynote} %Tema 2
+
+\date{novembro de 2008}
+\author[Maycon Santos\\Paulo Deininger\\Prof.Dr.Palin]{Maycon dos Santos Nunes\\Paulo Eduardo Deninger Messias Alves\\Prof. Dr. Marcelo Facio Palin}
+
+\institute
+{
+  \texttt{<maycon261@gmail.com\\paulodeininger@gmail.com\\profpalin@gmail.com>}\\
+  .\\%Pula Linha
+  \url{http://www.drumond.com.br/}\\
+  Faculdade Drummond.
+}
+\subject{Computação Paralela}
+
+\pgfdeclareimage[height=8mm]{logo}{img/logo}
+\pgfdeclareimage[height=7mm]{cc}{img/cc}
+\pgfdeclareimage[height=7.17cm]{cc-latex}{img/cc-latex}
+
+\logo{\pgfuseimage{logo}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE - Título e Autor %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Titulo abreviado seguido do Titulo Completo
+\title[Trabalho de Conclusão]{Computação Paralela}
+\frame{
+\titlepage
+\pgfuseimage{cc}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE - Sumário %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sumário}
+\tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introdução}
+
+\begin{frame}{Introdução}
+  Computação Paralela
+  \begin{itemize}
+    \item O que é computação paralela?
+    \item Para que serve?
+    \item Computador paralelo
+    \item Utilização na atualidade
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Programação Paralela}
+
+\begin{frame}{Programa\c{c}\~ao Paralela}
+  \begin{itemize}
+    \item O que é Programação Paralela?
+    \item Quando é viável a sua utilização?
+    \item Linguagens suportadas
+       \item Bibliotecas:
+          \item MPI-2
+	  \item OpenMP
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Diferenças MPI-2 x OpenMP}
+\begin{frame}{Diferenças MPI-2 x OpenMP}
+\textbf{Programação Multithread}
+  \begin{itemize}
+       \item MPI-2 
+       \item OpenMP 
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusão} % add these to see outline in slides
+\begin{frame}
+  \frametitle{Bibliografia}
+  \begin{itemize}
+\item Especificação MPI 1. \\
+  \url{<http://www.mpi-forum.org/docs/mpi-11-html/mpi-report.html>}
+\item Especificação MPI 2. \\
+ \url{<http://www.mpi-forum.org/docs/mpi-20-html/mpi2-report.html>}
+\item PALIN, M. F. Técnicas de decomposição de domínio em computação paralela para a simulação de campos eletromagnéticos pelo método dos elementos finitos. 2007.
+ \item PALIN, P. D. M. F. Compilando e testando a biblioteca mpi. 2008.\\
+Disponível em: \url{<http://www.insciti.com.br/ead/moodle/mod/resource/view.php?id=63>}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bibliografia cont.}
+  \begin{itemize}
+\item AZEREDO, P. Aulas ministradas na ufsc - curso de c. 2008. \\
+ Disponível em: \url{<http://mtm.ufsc.br/~azeredo/cursoC/aulas/c810.html>}
+\item CHARAO, P. A. S. Análise de desempenho de programas paralelos. 2006.
+\item CORPORATION, M. Openmp no visual c++. 2008.\\
+ Disponível em: \url{<http://msdn-ıvel.microsoft.com/pt-br/library/tt15eb9t(VS.80).aspx>}
+\item MAIA, L. P. Multithread. 1998.
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Conclusão}
+  \begin{center}
+   \large \textbf{Conclusão}
+  \end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Questões}
+  \begin{center}
+   \large \textbf{Obrigado!}
+  \end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+  \frametitle{Creative Commons}
+  \begin{center}
+    \pgfuseimage{cc-latex}
+  \end{center}
+\end{frame}
+
+\end{document}

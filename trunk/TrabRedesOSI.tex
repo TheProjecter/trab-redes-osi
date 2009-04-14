@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{verbatim}
+\usepackage{graphicx} 		% para poder utilizar imagens
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc} 	% utilizar acentuação
+\usepackage[utf8]{inputenc} 	% reconhece a acentuação para o português
+\usepackage{ae} 		% aumentar qualidade das fontes
+\usepackage{aecompl} 		% aumentar qualidade das fontes
+\usepackage{a4wide}            	% correta formatação da página em A4
+\usepackage{setspace}          	% para a distância entre linhas
+\usepackage{hyperref}		% para que o arquivo eletrônico tenha links, facilitando a navegabilidade
+\usepackage{fancyvrb}		% utilizado para formatação dos códigos fonte
+\usepackage{fancyhdr}		% para os cabeçalhos
+\usepackage{graphicx} 		% para poder utilizar imagens
+% Modelo da ABNT
+\usepackage{abnt-alf}
+
+\hypersetup {pdfnewwindow=true, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue} % configuração do link, para deixar tudo colorido de azul que seja link
+
+\title{IRC}
+\author{Alessandro Bispo dos Santos; Paulo Eduardo Deininger Messias Alves}
+\date{março de 2009}
+
+\makeindex
+
+\makeglossary
+
+%===== Códigos Fonte =====
+%\newenvironment{codeverbatim}{\VerbatimEnvironment
+%   \begin{Verbatim}[fontsize=\small, xleftmargin=-3mm]}
+%   {\end{Verbatim}}
+
+%=======
+%\floatstyle{plain}  % tipos: plain, boxed, ruled
+%\newfloat{codigo}{tbp}{lop}[section]  % numera os captions com  número de seção.
+%\floatname{codigo}{Código}
+%% nome para ser usado no sumário
+%\newcommand{\listofcodename}{Lista de Códigos}
+%=========================
+
+\begin{document}
+
+\include{capa}
+
+\thispagestyle{plain}
+\tableofcontents %sumário ou índice
+\listoffigures %lista de figuras
+%\listoftables %lista de tabelas
+%\listofcodename
+
+\newpage
+
+\pagestyle{headings} % inclui o título do capítulo no cabeçalho da página
+\include{intro}
+\include{irc}
+\include{osi}
+\include{conclusao}
+
+\newpage
+\thispagestyle{plain}
+
+\addcontentsline{toc}{section}{Refer\^encias Bibliogr\'aficas} %bibliografia
+\bibliographystyle{abnt-alf}
+\bibliography{bibitex/refs}
+
+\end{document}
