@@ -1,0 +1,31 @@
+\section {Sistema de controle de versões}
+
+\subsection {O que é}
+
+Um Sistema de Controle de Versões (do inglês \textit{Version Control System}) é um software que tem a capacidade de armazenar e gerenciar várias versões (ou revisões) de algo que você esteja desenvolvendo, como um projeto de software, um livro, entre outras coisas. Tudo isso fica em um local chamado repositório.
+
+\subsection {Entendendo o repositório}
+
+O repositório é o local central de qualquer sistema de controle de versões. Nele que se encontram as cópias principais dos seus projetos.
+
+O repositório (ou Sistema de Controle de Versões) pode ser visto como um típico servidor de arquivos, com uma estrutura do sistema de arquivos em árvore (semelhante ao unix), com o diferencial de que ele "lembra" de todas as alterações em cada arquivo e em cada diretório do sistema de arquivos. Desse modo, todos os clientes que acessam o repositório podem não só ver a versão mais atual dos arquivos, como também todas as versões anteriores, visualizando o que foi modificado (alterações, exclusões) e, também, por quem foi modificado.
+
+Os usuários interagem com o repositório por meio de um software cliente, desse modo podem ler ou modificar os arquivos que se encontram no mesmo.
+
+\subsection {Subversion em funcionamento}
+
+Quando baixamos o projeto do servidor para a nossa máquina, essa cópia fica conhecida como {\textbf{cópia de trabalho} (ou {\textit{working copy}). Na nossa cópia de trabalho que escrevemos, apagamos, renomeamos e criamos arquivos e diretórios. Quando finalizarmos as mudanças em nossa cópia local, enviamos as mudanças para o servidor.
+
+Os passos são os seguintes:
+
+% colocar imagens após os itens
+
+\begin{itemize}
+ \item 1. Fazemos o {\textit{checkout}} inicial do projeto, onde criamos nossa cópia de trabalho local ({\textit{working copy}}).
+ \item 2. Efetuamos as mudanças que quisermos nos arquivos do projeto.
+ \item 3. Com as alterações finalizadas, damos o {\textit{commit}} no projeto, ou seja, enviamos as alterações de nossa cópia local para a cópia que está no repositório do projeto. Com isso, o número de revisão é incrementado.
+\end{itemize}
+
+É através do número de revisão que podemos visualizar o histórico de alterações do nosso projeto, pois cada {\textit{commit}} é tratado como se fosse uma alteração no projeto inteiro.
+
+
