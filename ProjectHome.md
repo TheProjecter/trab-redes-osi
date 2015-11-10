@@ -1,0 +1,1 @@
+Trabalho desenvolvido pelos alunos Alessandro B. Santos e Paulo Eduardo D. Messias, para a disciplina Redes de computadores, do 7º semestre de Ciência da Computação da Faculdade Carlos Drummond de Andrade.
